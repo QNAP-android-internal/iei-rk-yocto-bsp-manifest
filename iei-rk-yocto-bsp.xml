@@ -9,20 +9,21 @@
 	<remote fetch="https://github.com/kraj" name="clang"/>
 	<remote fetch="https://github.com/JeffyCN" name="rk-github" />
 	<remote fetch="https://github.com/QNAP-android-internal" name="iei-github" />
+	<remote name="sw3-gitlab" fetch="ssh://git@10.20.70.37/sw3_android13_rk3588_group"/>
 
 	<project name="meta-browser" remote="oss" path="sources/meta-browser" revision="83cb90c618e24af9bc40fb25baab2a0acd47a560" upstream="scarthgap"/>
 	<project name="meta-openembedded" remote="oe" path="sources/meta-openembedded" revision="2338409efc51cf2022ff5610a9fb689251706e2b" upstream="scarthgap"/>
 	<project name="meta-qt6" remote="qt" path="sources/meta-qt6" revision="dc13e1bfda4a4757a08c2d6673bc4bac012c4a80" upstream="6.7.0"/>
 	<project name="meta-clang" remote="clang" path="sources/meta-clang" revision="52c61cd5d447f871a1666e64fcfdf5f27a47f44c" upstream="scarthgap"/>
 	<project name="meta-rockchip" remote="rk-github" path="sources/meta-rockchip" revision="b6b01a575a618cf8b06c359881f666782db6c5e8" upstream="scarthgap"/>
-	<project name="poky" remote="yocto" path="sources/poky" revision="0b37512fb4b231cc106768e2a7328431009b3b70" upstream="scarthgap">
+	<project name="poky" remote="yocto" path="sources/poky" revision="7e8674996b0164b07e56bc066d0fba790e627061" upstream="scarthgap">
 		<linkfile dest="scripts" src="scripts"/>
 		<linkfile dest="bitbake" src="bitbake"/>
 		<linkfile dest="meta-poky" src="meta-poky"/>
 		<linkfile dest=".templateconf" src=".templateconf"/>
 		<linkfile dest="oe-init-build-env" src="oe-init-build-env"/>
 	</project>
-	<project name="meta-iei-rk-bsp" path="sources/meta-iei-rk-bsp" remote="iei-github" revision="iei-scarthgap_6.1.75">
+	<project name="meta-iei-rk-bsp" path="sources/meta-iei-rk-bsp" remote="sw3-gitlab" revision="iei-scarthgap_6.1.75">
 		<linkfile src="conf/iei-conf/iei-rk-setup-release.sh" dest="iei-rk-setup-release.sh"/>
 	</project>
 </manifest>
