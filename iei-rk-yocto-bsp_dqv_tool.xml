@@ -9,7 +9,7 @@
 	<remote fetch="https://github.com/kraj" name="clang"/>
 	<remote fetch="https://github.com/JeffyCN" name="rk-github" />
 	<remote fetch="https://github.com/QNAP-android-internal" name="iei-github" />
-	<remote name="sw3-gitlab" fetch="ssh://git@10.20.70.37/sw3_android13_rk3588_group"/>
+	<remote name="sw3-gitlab" fetch="ssh://git@10.20.70.37/sw3_linux_rk3588_group"/>
 
 	<project name="meta-browser" remote="oss" path="sources/meta-browser" revision="83cb90c618e24af9bc40fb25baab2a0acd47a560" upstream="scarthgap"/>
 	<project name="meta-openembedded" remote="oe" path="sources/meta-openembedded" revision="2338409efc51cf2022ff5610a9fb689251706e2b" upstream="scarthgap"/>
